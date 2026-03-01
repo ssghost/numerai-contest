@@ -1,1 +1,1 @@
-# hullprediction-contest
+# numerai-contest
