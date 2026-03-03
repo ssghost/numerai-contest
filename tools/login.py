@@ -15,6 +15,3 @@ def login() -> NumerAPI:
     print(f"Current_round: {current_round}")
 
     return napi
-
-if __name__ == '__main__':
-    login()

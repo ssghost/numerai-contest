@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from constant import DATA_PATH, RESULT_PATH
+from constants import DATA_PATH, RESULT_PATH
 
 def baseline() -> None:
     live_data = pd.read_parquet(DATA_PATH)

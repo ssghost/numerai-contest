@@ -1,5 +1,5 @@
-import login
-from constant import CURR_MODEL, RESULT_PATH
+from login import login
+from constants import CURR_MODEL, RESULT_PATH
 
 def upload() -> None:
     try:
