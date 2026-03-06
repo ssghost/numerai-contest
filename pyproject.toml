@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "ssghost", email = "ssprof0@gmail.com"},
 ]
-dependencies = ["pandas>=3.0.1", "numpy>=2.2.6", "scikit-learn>=1.8.0", "matplotlib>=3.10.8", "seaborn>=0.13.2", "tqdm>=4.67.3", "lightgbm>=4.6.0", "xgboost>=3.2.0", "catboost>=1.2.10", "pandas-ta>=0.4.71b0", "statsmodels>=0.14.6", "scipy>=1.17.1", "pyyaml>=6.0.3", "python-dotenv>=1.2.1", "file:///${PROJECT_ROOT}/pkgs/torch-2.2.2-cp312-none-macosx_10_9_x86_64.whl", "file:///${PROJECT_ROOT}/pkgs/torchvision-0.17.2-cp312-cp312-macosx_10_13_x86_64.whl", "file:///${PROJECT_ROOT}/pkgs/torchaudio-2.2.2-cp312-cp312-macosx_10_13_x86_64.whl", "numerapi>=2.22.0", "pyarrow>=23.0.1"]
+dependencies = ["pandas>=3.0.1", "numpy>=2.2.6", "scikit-learn>=1.8.0", "matplotlib>=3.10.8", "seaborn>=0.13.2", "tqdm>=4.67.3", "lightgbm>=4.6.0", "xgboost>=3.2.0", "catboost>=1.2.10", "pandas-ta>=0.4.71b0", "statsmodels>=0.14.6", "scipy>=1.17.1", "pyyaml>=6.0.3", "python-dotenv>=1.2.1", "file:///${PROJECT_ROOT}/pkgs/torch-2.2.2-cp312-none-macosx_10_9_x86_64.whl", "file:///${PROJECT_ROOT}/pkgs/torchvision-0.17.2-cp312-cp312-macosx_10_13_x86_64.whl", "file:///${PROJECT_ROOT}/pkgs/torchaudio-2.2.2-cp312-cp312-macosx_10_13_x86_64.whl", "numerapi>=2.22.0", "pyarrow>=23.0.1", "kaggle>=2.0.0"]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "MIT"}

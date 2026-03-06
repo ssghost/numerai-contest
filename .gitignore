@@ -209,5 +209,6 @@ __marimo__/
 /pkgs
 /data
 /models
+/kaggle
 
 .DS_Store
