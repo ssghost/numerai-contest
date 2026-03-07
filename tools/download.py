@@ -27,4 +27,4 @@ def download_train() -> None:
         print(f"Error occurred: {e}.") 
 
 if __name__ == '__main__':
-    download_train()
+    download_live()
