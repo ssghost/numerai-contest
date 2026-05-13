@@ -5,8 +5,8 @@ import os
 from constants import RESULT_PATH, DATA_PATH, FEAT_CUST
 
 VAL_DATA_PATH = "data/validation.parquet"
-VAL_RESULT_PATH = "data/val_result.csv" 
-TARGET_COL = "target_cyrusd_20"
+VAL_RESULT_PATH = "data/val_result_dual.csv" 
+TARGET_COL = "target_ender_20"
 
 def merge_data(submission_path, live_data_path, feature_list) -> pd.DataFrame:
     sub_df = pd.read_csv(submission_path)
@@ -73,7 +73,7 @@ def run_pipeline(result=RESULT_PATH, live=DATA_PATH, feat=FEAT_CUST) -> None:
         proj = calc_vector(m_data, "prediction", features)
         m_data["prediction_neutral"] = pd.Series(scores - opt_p * proj).rank(pct=True).values
         final_submission = m_data[["id", "prediction_neutral"]].rename(columns={"prediction_neutral": "prediction"})
-        final_submission.to_csv("data/submission_neutralized.csv", index=False)
+        final_submission.to_csv("data/submission_dual_neutralized.csv", index=False)
         print(f"Neutralized result generated with range: {final_submission['prediction'].min():.2f} - {final_submission['prediction'].max():.2f}")
     else:
         print("Error occured.")
